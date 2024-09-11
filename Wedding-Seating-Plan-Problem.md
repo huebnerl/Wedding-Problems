@@ -1,7 +1,7 @@
 
 # The Wedding Seating Plan Problem and how to solve it.
 
-Let's consider $n$ wedding guests which shall be seated at $m$ tables. $a$ shall define the maximum number of guests a table $m$ can seat. The minimum number of peaople each guest knowx at their table is defined by $b$. Let $C^{ij}$ be the connection matrix indicating the relation of guest $i$ to guest $j$. 
+Let's consider $n$ wedding guests which shall be seated at $m$ tables. $a$ shall define the maximum number of guests a table $m$ can seat. The minimum number of peaople each guest knows at their table is defined by $b$. Let $C^{ij}$ be the connection matrix indicating the relation of guest $i$ to guest $j$ from number 0 (not knowing each other) to 50 (shall be seated together). 
 
 Decision Variables:
 ```math
@@ -26,4 +26,16 @@ subject to
 ```
 ```math
 \sum^{n}_{i=1} g^{i}_{k} = a \;\;\;\;\;\; \forall\;\; 1 \leq k \leq m
+```
+```math
+\sum^{n}_{i=1} g^{i}_{k} g^{j}_{k} \geq (b+1)g^{j}_{k} \;\;\;\;\;\; \forall\;\;  1 \leq j \leq n, \;\; 1 \leq k \leq m, \;\; C^{ij} > 0
+```
+
+
+Helping Constraints to linearize the model:
+```math
+\sum^{n}_{i=1} g^{i}_{k} g^{j}_{k} \leq a g^{j}_{k}, \;\;\;\;\;\; \forall\;\;  1 \leq j \leq n, \;\; 1 \leq k \leq m
+```
+```math
+\sum^{n}_{j=1} g^{i}_{k} g^{j}_{k} \leq a g^{i}_{k}, \;\;\;\;\;\; \forall\;\;  1 \leq i \leq n, \;\; 1 \leq k \leq m
 ```
