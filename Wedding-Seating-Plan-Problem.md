@@ -4,7 +4,7 @@ For most of us, marrying the love of our lives is the most beautiful moment in o
 
 Thankfully a lot of great researchers and mathematitions married before me and had the same intuition that math could help us with this crazy problem of how to seat your guests. Let me introduce you to the common and absolutely life-relevant "Wedding Seating Plan Problem".
 
-This little post shall give you an idea on how to use mathematical optimization to support your personal journey to a great wedding seating plan - our how it is called by [Borja Menéndez]([https://www.genome.gov/](https://feasible.substack.com/p/8-i-just-got-married-and-i-had-to) the "the Delicate Art of Seating Guests".
+This little post shall give you an idea on how to use mathematical optimization to support your personal journey to a great wedding seating plan - our how it is called by [Borja Menéndez](https://feasible.substack.com/p/8-i-just-got-married-and-i-had-to) the "the Delicate Art of Seating Guests".
 
 Let's consider $n$ wedding guests which shall be seated at $m$ tables. $a$ shall define the maximum number of guests a table $m$ can seat. The minimum number of peaople each guest knows at their table is defined by $b$. Let $C^{ij}$ be the connection matrix indicating the relation of guest $i$ to guest $j$ from number 0 (not knowing each other) to 50 (shall be seated together). 
 
