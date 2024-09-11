@@ -13,3 +13,17 @@ g^{i}_{k} =
 ```
 
 
+The objective is to maximize:
+```math
+\sum^{m}_{k=1}\sum^{n-1}_{i=1}\sum^{n}_{j=i+1} C^{ij} g^{i}_{k} g^{j}_{k}
+```
+
+In other words we want to maximize the overall sum of connections $C^{ij}$ where guests $i$ and $j$ sit at the same table $k$.
+
+subject to 
+```math
+\sum^{m}_{k=1} g^{i}_{k} = 1 \;\;\;\;\;\; \forall\;\; 1 \leq i \leq n
+```
+```math
+\sum^{n}_{i=1} g^{i}_{k} = a \;\;\;\;\;\; \forall\;\; 1 \leq k \leq m
+```
