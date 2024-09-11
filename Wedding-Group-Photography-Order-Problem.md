@@ -9,3 +9,4 @@ And after some while we just want to continue with the celebration but still som
 
 Doesn't that already sound like a perfectly defined combinatorial optimization problem? It is - with a clear objective: minimizing the overall time of taking group photos by choosing an order that allows the smallest amount of guest exchanges.
 
+And very important, doing all that subject to not missing out any relevant combination of guests with the bride and groom.
