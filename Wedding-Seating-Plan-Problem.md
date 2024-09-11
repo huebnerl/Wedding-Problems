@@ -1,5 +1,10 @@
 
 # The Wedding Seating Plan Problem and how to solve it.
+Marrying the love of your life is for most of us the greatest moment of life and comes among all the gratitute and happiness with a lot of emotions as well. Having a Marriage Date and a Wedding Location is often one of the first achievements and takes away a lot of pressure during the wedding planning. Nevertheless, talking about the location could still cause a lot of trouble when thinking about how to seat you lovelly guests at the wedding later.
+
+Thankfully a lot of great researchers and mathematitions married before me and had the same intuition that math could help us with this crazy problem of how to seat your guests. Let me introduce you to the common and absolutely life-relevant "Wedding Seating Plan Problem".
+
+This little post shall give you an idea on how to use mathematical optimization to support your personal journey to a great wedding seating plan.
 
 Let's consider $n$ wedding guests which shall be seated at $m$ tables. $a$ shall define the maximum number of guests a table $m$ can seat. The minimum number of peaople each guest knows at their table is defined by $b$. Let $C^{ij}$ be the connection matrix indicating the relation of guest $i$ to guest $j$ from number 0 (not knowing each other) to 50 (shall be seated together). 
 
@@ -18,7 +23,7 @@ The objective is to maximize:
 \sum^{m}_{k=1}\sum^{n-1}_{i=1}\sum^{n}_{j=i+1} C^{ij} g^{i}_{k} g^{j}_{k}
 ```
 
-In other words we want to maximize the overall sum of connections $C^{ij}$ where guests $i$ and $j$ sit at the same table $k$.
+In other words we want to maximize the overall sum of connections $C^{ij}$ where guests $i$ and $j$ sit at the same table $k$ so that all guests know as many other guests at their own table.
 
 subject to 
 ```math
@@ -39,3 +44,10 @@ Helping Constraints to linearize the model:
 ```math
 \sum^{n}_{j=1} g^{i}_{k} g^{j}_{k} \leq a g^{i}_{k}, \;\;\;\;\;\; \forall\;\;  1 \leq i \leq n, \;\; 1 \leq k \leq m
 ```
+
+Value Range Constraint:
+```math
+g^{i}_{k}, g^{j}_{k} \in \{0, 1\}
+```
+
+We want to maximize these connections at all tables under consideration that every guest can only sit at one table and each table can only have at max $a$ guests. Each guest must know at minimum $b$ people at the table. 
