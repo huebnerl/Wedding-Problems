@@ -13,6 +13,8 @@ Doesn't that already sound like a perfectly defined combinatorial optimization p
 
 And very important, doing all that subject to not missing out any relevant photo combination of guests with the bride and groom.
 
+Just to give you a small introduction to the complexity of this problem, think of around 100 guests and assume about 25 different photo combinations. In such a case there about $\frac{25(25-1)}{2} = 300$ possible orders how to take the photos. - thats a lot.
+
 ### The Art of orderung Group Photos :camera:
 First of all we need the relevant data to take the ordering decision. Let's start with a list of needed Photocombinations and the information about the needed guests for that photo.
 
