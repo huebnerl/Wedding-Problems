@@ -11,7 +11,7 @@ Doesn't that already sound like a perfectly defined combinatorial optimization p
 
 And very important, doing all that subject to not missing out any relevant photo combination of guests with the bride and groom.
 
-### The Art of orderung Group Photos
+### The Art of orderung Group Photos :camera:
 First of all we need the relevant data to take the ordering decision. Let's start with a list of needed Photocombinations and the information about the needed guests for that photo.
 
 Let $P^{k}_{i}$ define the information that guest $k$ of $m$ guests is part of the Photo $i$ of $n$ photos:
@@ -36,6 +36,12 @@ Example input data matrix:
 Based on that input data we can derive a transition graph from one photo to the next photo that defines of many changes are necessary in guests. And here we are... it's a classical graph problem.
 
 It's rather easy to model the Wedding Group Photography Order Problem as a nice shortest path optimization problem where we want to find the shortest path to navigate the graph of possible photo combinations with the number of changes in guests to get from one photo to the next one.
+
+![Photo Order](https://github.com/user-attachments/assets/f6140906-724f-4437-a44f-7ea49026d20a)
+
+As we can see for our example above the order of photos with the least number of changes in guests is defined along the edges with the lowest numbers in the graph.
+
+### :star2: Let mathematical optimization help us with solving this problem for larger instances:
 
 Let $c_{ij}$ define the number of changes in guests to get from the photo number $i$ to the photo number $j$ of $n$ photos defined in the Distance-Matrix $C_{n\times n}$.
 The matrix of changes can be derived from the information matrix $P^{k}_{i}$.
