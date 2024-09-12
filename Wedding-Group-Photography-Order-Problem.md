@@ -7,6 +7,8 @@ But besides all the nice and spontaneous shots of laughing and talking guests, i
 ... and that takes it's time. 
 And after some while we just want to continue with the celebration but still some combinations are missing.
 
+![photo_2024-09-12 10 24 05](https://github.com/user-attachments/assets/c860085f-c869-46c8-b5b0-845687d309fb)
+
 Doesn't that already sound like a perfectly defined combinatorial optimization problem? It is - with a clear objective: minimizing the overall time of taking group photos by choosing an order that allows the smallest amount of guest exchanges.
 
 And very important, doing all that subject to not missing out any relevant photo combination of guests with the bride and groom.
