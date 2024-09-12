@@ -7,6 +7,8 @@ This little post shall give you an idea on how to use mathematical optimization 
 
 <img width="2309" alt="Screenshot 2024-09-12 at 10 19 34" src="https://github.com/user-attachments/assets/5c2a3762-5eb6-4dbd-a5a2-d3d7d5493aca">
 
+Just to give you a small introduction to the complexity of this problem, think of around 90 wedding guests that shall be placed at 9 tables of 10 guests each. In such a case there about $9^{90} = 7.61 \times 10^{85}$ possible combinations of seating guests. - thats a lot.
+
 Let's consider $n$ wedding guests which shall be seated at $m$ tables. $a$ shall define the maximum number of guests a table $m$ can seat. The minimum number of peaople each guest knows at their table is defined by $b$. Let $C^{ij}$ be the connection matrix indicating the relation of guest $i$ to guest $j$ from number 0 (not knowing each other) to 50 (shall be seated together). 
 
 Decision Variables:
