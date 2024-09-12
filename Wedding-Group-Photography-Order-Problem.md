@@ -62,6 +62,8 @@ subject to
 \sum^{n}_{i=1, i\neq j} x_{ij} = 1 \;\;\;\;\;\; \forall\;\; 1 \leq j \leq n
 ```
 
+In english words we just want to ensure that every photo is taken exactly ones.
+
 Further we need a dummy variable $y_{i}$ for each photo $i$ of $n$ photos that defines the order in which photos are taken, counting from photo 1. For all photos $i$ and $j$ it is defined that $u_i < u_j$ which implies that photo $i$ is taken before photo $j$.
 
 Because linear programming favors non-strict inequalities ($\geq$ ) over strict (>), we adapt the constraint formulation to the following:
